@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="player">
+            <div class="cover">
+                <div class="menu">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                        viewBox="0 0 16 16">
+                        <path fill="#000000" d="M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z"></path>
+                    </svg>
+                </div>
+                <div class="search">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                        viewBox="0 0 16 16">
+                        <path fill="#000000"
+                            d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="content">
+                <div class="info">
+                    <div class="songName">STRESSED OUT</div>
+                    <div class="songInfo">
+                        <div class="artist">twenty one pilots</div> -
+                        <div class="album">Blurryface</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                            viewBox="0 0 16 16">
+                            <path fill="#000000" d="M9 2.5v5l5-5v11l-5-5v5l-5.5-5.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="button play">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 16 16">
+                            <path fill="#000000" d="M3 2l10 6-10 6z"></path>
+                        </svg>
+                    </div>
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                            viewBox="0 0 16 16">
+                            <path fill="#000000" d="M8 13.5v-5l-5 5v-11l5 5v-5l5.5 5.5z"></path>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                            viewBox="0 0 16 16">
+                            <path fill="#000000"
+                                d="M11.8 1c-1.682 0-3.129 1.368-3.799 2.797-0.671-1.429-2.118-2.797-3.8-2.797-2.318 0-4.2 1.882-4.2 4.2 0 4.716 4.758 5.953 8 10.616 3.065-4.634 8-6.050 8-10.616 0-2.319-1.882-4.2-4.2-4.2z">
+                            </path>
+                        </svg>
+
+                    </div>
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                            viewBox="0 0 16 16">
+                            <path fill="#000000"
+                                d="M12 11h-1.586l-2.5-2.5 2.5-2.5h1.586v2.5l3.5-3.5-3.5-3.5v2.5h-2c-0.265 0-0.52 0.105-0.707 0.293l-2.793 2.793-2.793-2.793c-0.188-0.188-0.442-0.293-0.707-0.293h-3v2h2.586l2.5 2.5-2.5 2.5h-2.586v2h3c0.265 0 0.52-0.105 0.707-0.293l2.793-2.793 2.793 2.793c0.188 0.188 0.442 0.293 0.707 0.293h2v2.5l3.5-3.5-3.5-3.5v2.5z">
+                            </path>
+                        </svg>
+
+                    </div>
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                            height="16" viewBox="0 0 16 16">
+                            <path fill="#000000"
+                                d="M12 11h-1.586l-2.5-2.5 2.5-2.5h1.586v2.5l3.5-3.5-3.5-3.5v2.5h-2c-0.265 0-0.52 0.105-0.707 0.293l-2.793 2.793-2.793-2.793c-0.188-0.188-0.442-0.293-0.707-0.293h-3v2h2.586l2.5 2.5-2.5 2.5h-2.586v2h3c0.265 0 0.52-0.105 0.707-0.293l2.793-2.793 2.793 2.793c0.188 0.188 0.442 0.293 0.707 0.293h2v2.5l3.5-3.5-3.5-3.5v2.5z">
+                            </path>
+                        </svg>
+                    
+                    </div>
+                    <div class="button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                            height="16" viewBox="0 0 16 16">
+                            <path fill="#000000"
+                                d="M12 11h-1.586l-2.5-2.5 2.5-2.5h1.586v2.5l3.5-3.5-3.5-3.5v2.5h-2c-0.265 0-0.52 0.105-0.707 0.293l-2.793 2.793-2.793-2.793c-0.188-0.188-0.442-0.293-0.707-0.293h-3v2h2.586l2.5 2.5-2.5 2.5h-2.586v2h3c0.265 0 0.52-0.105 0.707-0.293l2.793-2.793 2.793 2.793c0.188 0.188 0.442 0.293 0.707 0.293h2v2.5l3.5-3.5-3.5-3.5v2.5z">
+                            </path>
+                        </svg>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

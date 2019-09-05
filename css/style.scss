@@ -1,0 +1,120 @@
+$bg-color: #FF564B;
+$player-bg: #111111;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    background: $bg-color;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player{
+    max-width: 366px;
+    max-height: 650px;
+    min-height: 650px;
+    width: 100%;
+    height: 100%;
+    background: $player-bg;
+    display: flex;
+    flex-flow: column;
+    .cover{
+        background-image: url('../assets/cover.gif');
+        background-size: cover;
+        width: 100%;
+        height: 366px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .menu, .search{
+            padding: 5px;
+            margin:10px 15px;
+            cursor: pointer;
+            svg{
+                path{
+                    fill: #888888;
+                }
+            }
+        }
+    }
+    .content{
+        display: flex;
+        flex-flow: column;
+        height: 50%;
+        .info{
+            flex: 0.5;
+            color: #4A4A4A;
+            font-size: 11px;
+            line-height: 11px;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            color: #777;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            .songInfo{
+                display: flex;
+                justify-content: center;
+            }
+            .songName{ 
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 700; 
+                margin-bottom: 7px;
+            } 
+        }
+    }
+    .controls, .actions{
+        display: flex;
+        justify-content: space-around;
+        .button{
+            cursor: pointer;
+            svg{
+                width: 100%;
+                height: 100%;
+                path{
+                    fill: white;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #FF564B;
+                    }
+                }
+            }
+        }
+    }
+    .controls{
+        flex: 0.25;
+        margin: 0px 95px;
+        .button{
+            width: 33px;
+            height: 33px;
+        }
+        .play{
+            margin-left: 10px; 
+        }
+    }
+    .actions{
+        flex: 0.25;
+        margin-bottom: auto;
+    }
+}
